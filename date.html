@@ -1,0 +1,44 @@
+<!-- yes.html -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="style1.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div>
+        <h1 class="header_text">Great! Let's Fix a Date</h1>
+      </div>
+      <p>
+        <a href="https://www.instagram.com/untoldcoding/">@untoldcoding</a>
+      </p>
+      <div class="gif_container">
+        <img
+          src="https://i.postimg.cc/pdNqPxx1/milk-and-mocha-cute.gif"
+          alt="Cute animated illustration"
+        />
+      </div>
+      <div class="buttons">
+        <button class="btn" id="dateButton" onclick="displayDateForm()">Fix a Date</button>
+      </div>
+      <div id="dateForm" style="display: none;">
+        <!-- Your date fixing form can go here -->
+        <label for="date">Select a Date:</label>
+        <input type="date" id="date" name="date">
+        <br>
+        <button class="btn" onclick="submitDate()">Submit</button>
+      </div>
+      <script>
+        function displayDateForm() {
+          document.getElementById("dateForm").style.display = "block";
+        }
+
+        function submitDate() {
+          // You can add code here to handle the submitted date
+          var selectedDate = document.getElementById("date").value;
+          alert("Date Submitted: " + selectedDate); // Example: Displaying an alert message
+        }
+      </script>
+    </div>
+  </body>
+</html>
